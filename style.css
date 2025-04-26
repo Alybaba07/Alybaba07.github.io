@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Alybaba';
+	src:url('Alybaba.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: Alybaba, 'Alybaba', sans-serif;
+	background: #161d25;
+	color: #c4d8dc;
+	font-size: 30px;
+}
+
+.title {
+	height: 180px;
+	margin-top: 32px 4px 0 4px;
+}
+
+.content {
+	text-align: center;
+	margin: 0 4px;
+}
+
+.pp {
+	margin-top: 2%;
+    height: 250px;
+}
+
+.section {
+	line-height: 200px;
+}
+
+.section img {
+	height: 150px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+	text-decoration: none
+}
+
+.image:hover {
+	transform: scale(1.05);
+	transition: 0.3s ease-in-out;
+}
+
+.section p {
+	line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+}
