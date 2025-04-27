@@ -1,22 +1,24 @@
 @font-face {
 	font-family: 'Alybaba';
-	src:url('Alybabav2-Regular.ttf') format('truetype');
+	src: url('Alybabav3-Regular.ttf') format('truetype');
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-	font-family: Alybaba, 'Alybaba', sans-serif;
+html, body {
+	scroll-behavior: smooth;
+	font-family: 'Alybaba', sans-serif;
 	background: #161d25;
 	color: #c4d8dc;
+	height: 100%;
 	font-size: 30px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 
-.title {
-	height: 180px;
-	margin-top: 32px 4px 0 4px;
+main {
+	flex: 1;
+	text-align: center;
+	padding: 50px 20px;
 }
 
 .content {
@@ -24,9 +26,38 @@ body {
 	margin: 0 4px;
 }
 
+.container-1 {
+	display: flex;
+	align-items: center; /* Centre verticalement */
+	justify-content: center; /* Centre horizontalement */
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2%;
+	margin-right: 20px;
+}
+
 .pp {
-	margin-top: 2%;
-    height: 250px;
+	height: 225px;
+}
+
+.by {
+	margin-top: 0;
+	font-size: 25px;
+}
+
+.atFrisk {
+	color: #c4d8dc;
+	text-decoration-thickness: 1px;
+}
+
+.profile-info {
+	text-align: center;
 }
 
 .section {
@@ -36,21 +67,40 @@ body {
 .section img {
 	height: 150px;
 	display: inline-block;
-    vertical-align: middle;
+	vertical-align: middle;
+	transition: transform 0.3s ease-in-out;
 }
 
-a {
-	text-decoration: none
+.section a {
+	text-decoration: none;
 }
 
 .image:hover {
 	transform: scale(1.05);
-	transition: 0.3s ease-in-out;
 }
 
 .section p {
 	line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-    width: 400px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 450px;
+	font-size: 40px;
+}
+
+footer {
+	background-color: #161d25;
+	color: #a1b3b7;
+	text-align: center;
+	padding: 5px 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-copy__text {
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1;
 }
